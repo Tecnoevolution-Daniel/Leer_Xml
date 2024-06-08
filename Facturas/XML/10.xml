@@ -1,0 +1,3830 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AttachedDocument xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:AttachedDocument-2 http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-AttachedDocument-2.1.xsd" xmlns="urn:oasis:names:specification:ubl:schema:xsd:AttachedDocument-2" xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:n1="urn:oasis:names:specification:ubl:schema:xsd:CommonSignatureComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2" xmlns:sac="urn:oasis:names:specification:ubl:schema:xsd:SignatureAggregateComponents-2" xmlns:sbc="urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2" xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2" xmlns:ccts-cct="urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ext:UBLExtensions>
+    <ext:UBLExtension>
+      <ext:ExtensionContent><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="xmldsig-f702f8f1-57f6-441f-96e0-96387f8d5e0e"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" /><ds:Reference Id="xmldsig-3ebeb014-4fdf-48a6-a683-43102c8da0e7-ref0" URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>9GzfDRBVcRpY5IB3cJdUwaXoGgMDxLAI9/cKRJ8+rYI=</ds:DigestValue></ds:Reference><ds:Reference URI="#xmldsig-f702f8f1-57f6-441f-96e0-96387f8d5e0e-keyinfo"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>/S9zLU6J7Go0WnLACaWMW5tHhh5NyoCrQCQ59e1qO6c=</ds:DigestValue></ds:Reference><ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xmldsig-f702f8f1-57f6-441f-96e0-96387f8d5e0e-signedprops"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>YjzTWy+SaiQZYKPWXmCy9JR2E+m+oUOmPIYTiUaudOg=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue Id="xmldsig-f702f8f1-57f6-441f-96e0-96387f8d5e0e-sigvalue">hj8j1KyY9axPEFz4xCfWMFbdSdmBi0cm+4FFR6kG9XiHWA4FYD8DZT4G+KR8HzN2vWDnXvdn2IqGKTNy1jMD7t7IKVCOtzw03cPyA7zSqEPcdaU5sagqYw7+Xd46IU07pwFCvB5DLATLzH8wtWji5svcRVn36fh/ZDKc35S1Rtv7LHNrxNj69Hi1wXZCM/W6mHKd5E9hyKjgIjNvLbCbZRgYJHoFjkEndjILRX2+uSf/Rfjjf8XXkT1g5T1a7L0Zfutm3tJuxjs2tdCC7E2sOp610GnmxiaEaDs9TaByT3XQeHQNzCkhbCYAqIKLYsT/1dDTUuojEx2ZdOsANJq47A==</ds:SignatureValue><ds:KeyInfo Id="xmldsig-f702f8f1-57f6-441f-96e0-96387f8d5e0e-keyinfo"><ds:X509Data><ds:X509Certificate>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</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object Id="XadesObjectId-91177b18-444c-4cd7-aa42-06666a7ae131"><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" Id="QualifyingProperties-2fcdbbc5-39b5-4b7c-8ea1-9749bca15047" Target="#xmldsig-f702f8f1-57f6-441f-96e0-96387f8d5e0e"><xades:SignedProperties Id="xmldsig-f702f8f1-57f6-441f-96e0-96387f8d5e0e-signedprops"><xades:SignedSignatureProperties><xades:SigningTime>2024-04-16T14:48:54+00:00</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>deJ7YgZPYRa5VYXH4SRpG1F6wRH41npAPa+3RbyfIwI=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>C=CO, L=Bogota D.C., O=Andes SCD, OU=Division de certificacion entidad final, CN=CA ANDES SCD S.A. Clase II v3, 1.2.840.113549.1.9.1=info@andesscd.com.co</ds:X509IssuerName><ds:X509SerialNumber>1726753347217552646</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate><xades:SignaturePolicyIdentifier><xades:SignaturePolicyId><xades:SigPolicyId><xades:Identifier>https://facturaelectronica.dian.gov.co/politicadefirma/v2/politicadefirmav2.pdf</xades:Identifier><xades:Description>Política de firma para facturas electrónicas de la República de Colombia</xades:Description></xades:SigPolicyId><xades:SigPolicyHash><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>dMoMvtcG5aIzgYo0tIsSQeVJBDnUnfSOfBpxXrmor0Y=</ds:DigestValue></xades:SigPolicyHash></xades:SignaturePolicyId></xades:SignaturePolicyIdentifier><xades:SignerRole><xades:ClaimedRoles><xades:ClaimedRole>third party</xades:ClaimedRole></xades:ClaimedRoles></xades:SignerRole></xades:SignedSignatureProperties><xades:SignedDataObjectProperties><xades:DataObjectFormat ObjectReference="#xmldsig-3ebeb014-4fdf-48a6-a683-43102c8da0e7-ref0"><xades:MimeType>text/xml</xades:MimeType><xades:Encoding>UTF-8</xades:Encoding></xades:DataObjectFormat></xades:SignedDataObjectProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature></ext:ExtensionContent>
+    </ext:UBLExtension>
+  </ext:UBLExtensions>
+  <cbc:UBLVersionID>UBL 2.1</cbc:UBLVersionID>
+  <cbc:CustomizationID>Documentos adjuntos</cbc:CustomizationID>
+  <cbc:ProfileID>Factura Electrónica de Venta</cbc:ProfileID>
+  <cbc:ProfileExecutionID>1</cbc:ProfileExecutionID>
+  <cbc:ID>e15eb0e9872df00a0b7f7de8c8de97ae3136bb5005c0e1ac0e0269b7089321fc637bf7474a5881fbac32dcc944055080</cbc:ID>
+  <cbc:IssueDate>2024-04-16</cbc:IssueDate>
+  <cbc:IssueTime>14:48:54</cbc:IssueTime>
+  <cbc:DocumentType>Contenedor de Factura Electrónica</cbc:DocumentType>
+  <cbc:ParentDocumentID>FVFE22007</cbc:ParentDocumentID>
+  <cac:SenderParty>
+    <cac:PartyTaxScheme>
+      <cbc:RegistrationName>BIOPOLIMEROS INDUSTRIALES SAS</cbc:RegistrationName>
+      <cbc:CompanyID schemeAgencyID="195" schemeID="8" schemeName="31">900246497</cbc:CompanyID>
+      <cbc:TaxLevelCode>O-23</cbc:TaxLevelCode>
+      <cac:TaxScheme>
+        <cbc:ID>01</cbc:ID>
+        <cbc:Name>IVA</cbc:Name>
+      </cac:TaxScheme>
+    </cac:PartyTaxScheme>
+  </cac:SenderParty>
+  <cac:ReceiverParty>
+    <cac:PartyTaxScheme>
+      <cbc:RegistrationName>INDUSTRIAS TOMY S.A.S</cbc:RegistrationName>
+      <cbc:CompanyID schemeAgencyID="195" schemeID="0" schemeName="31">900131529</cbc:CompanyID>
+      <cbc:TaxLevelCode>R-99-PN</cbc:TaxLevelCode>
+      <cac:TaxScheme>
+        <cbc:ID>01</cbc:ID>
+        <cbc:Name>IVA</cbc:Name>
+      </cac:TaxScheme>
+    </cac:PartyTaxScheme>
+  </cac:ReceiverParty>
+  <cac:Attachment>
+    <cac:ExternalReference>
+      <cbc:MimeCode>text/xml</cbc:MimeCode>
+      <cbc:EncodingCode>UTF-8</cbc:EncodingCode>
+      <cbc:Description><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Invoice xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Invoice-2.1.xsd" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:sts="dian:gov:co:facturaelectronica:Structures-2-1" xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:n0="urn:oasis:names:specification:ubl:schema:xsd:CommonSignatureComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2" xmlns:sac="urn:oasis:names:specification:ubl:schema:xsd:SignatureAggregateComponents-2" xmlns:sbc="urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2" xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2" xmlns:ccts="urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ext:UBLExtensions>
+    <ext:UBLExtension>
+      <ext:ExtensionContent>
+        <sts:DianExtensions>
+          <sts:InvoiceControl>
+            <sts:InvoiceAuthorization>18764062760361</sts:InvoiceAuthorization>
+            <sts:AuthorizationPeriod>
+              <cbc:StartDate>2023-12-27</cbc:StartDate>
+              <cbc:EndDate>2024-12-27</cbc:EndDate>
+            </sts:AuthorizationPeriod>
+            <sts:AuthorizedInvoices>
+              <sts:Prefix>FVFE</sts:Prefix>
+              <sts:From>20001</sts:From>
+              <sts:To>40000</sts:To>
+            </sts:AuthorizedInvoices>
+          </sts:InvoiceControl>
+          <sts:InvoiceSource>
+            <cbc:IdentificationCode listAgencyID="6" listAgencyName="United Nations Economic Commission for Europe" listSchemeURI="urn:oasis:names:specification:ubl:codelist:gc:CountryIdentificationCode-2.1">CO</cbc:IdentificationCode>
+          </sts:InvoiceSource>
+          <sts:SoftwareProvider>
+            <sts:ProviderID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="8" schemeName="31">830048145</sts:ProviderID>
+            <sts:SoftwareID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">708c12e5-c77b-4377-b115-2dba667b9c9b</sts:SoftwareID>
+          </sts:SoftwareProvider>
+          <sts:SoftwareSecurityCode schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">c60825d49b570533477dc1c17f0ec5e0a0fc59c43e525e4de82b372adfb1700f3e6f15bde19529f4fdef5ed74f21e49a</sts:SoftwareSecurityCode>
+          <sts:AuthorizationProvider>
+            <sts:AuthorizationProviderID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="4" schemeName="31">800197268</sts:AuthorizationProviderID>
+          </sts:AuthorizationProvider>
+          <sts:QRCode>NumFac:FVFE22007
+FecFac:2024-04-15
+HorFac:08:54:00-05:00
+NitFac:900246497
+DocAdq:900131529
+ValFac:3722532.5
+ValIva:707281.63
+ValOtroIm:0
+ValTolFac:4429814.13
+CUFE:e15eb0e9872df00a0b7f7de8c8de97ae3136bb5005c0e1ac0e0269b7089321fc637bf7474a5881fbac32dcc944055080
+https://catalogo-vpfe.dian.gov.co/document/searchqr?documentkey=e15eb0e9872df00a0b7f7de8c8de97ae3136bb5005c0e1ac0e0269b7089321fc637bf7474a5881fbac32dcc944055080</sts:QRCode>
+        </sts:DianExtensions>
+      </ext:ExtensionContent>
+    </ext:UBLExtension>
+    <ext:UBLExtension>
+      <ext:ExtensionContent><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="xmldsig-849c6aa2-eb52-42db-829c-c8ebcbc4ee48"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" /><ds:Reference Id="xmldsig-3c6b6b3e-a209-4a92-b5d9-4fd7cff2a3e2-ref0" URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>vGiz0Mflh366OQz+IoSyDY4RiQMkoHrlFML/rZ8hgDo=</ds:DigestValue></ds:Reference><ds:Reference URI="#xmldsig-849c6aa2-eb52-42db-829c-c8ebcbc4ee48-keyinfo"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>BRoOJ2hpmRCnujeNu4brcIPo66p89FK1Gh9bphDutoo=</ds:DigestValue></ds:Reference><ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xmldsig-849c6aa2-eb52-42db-829c-c8ebcbc4ee48-signedprops"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>fYjGL1g4MD9Hx6Q9zXH6TRXK6r8pkXLP5dZaLn8p+gI=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue Id="xmldsig-849c6aa2-eb52-42db-829c-c8ebcbc4ee48-sigvalue">RNWUUjHA7vlTQTpnR4la3jbW1Tfw++VcGeWzWjL8eprQADwkWoWs3pNKM33CVRPIQVWE+TkiR78yCq28KRunMgTflHAbHasS4q4aWcVpdctynzm7h3e7xjTgsKNBUL80fO+dt1149br57cdAgK1uXKL9JeBRfFARDvyS958wP8ERYIrPKtBp/14DL5sclW9+O5Bx+KvH8XJRHa6bQ+LzuGiD+Zj7D3A5MNXWm0BULw8bCrUsOC8ZBl/RFtO2Ii75vrTda92SwoegYOGJxSyaTcbVCz9lr/Hhw9HXFEZF4XqxkoV7L8ppCdHfQHWBUxXqDmkBzMCD+0xdvknHEMKbGQ==</ds:SignatureValue><ds:KeyInfo Id="xmldsig-849c6aa2-eb52-42db-829c-c8ebcbc4ee48-keyinfo"><ds:X509Data><ds:X509Certificate>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</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object Id="XadesObjectId-dde4f576-3109-466d-b1ae-23a553ea3d57"><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" Id="QualifyingProperties-f372083e-531b-42fd-949c-ca0dd59dc602" Target="#xmldsig-849c6aa2-eb52-42db-829c-c8ebcbc4ee48"><xades:SignedProperties Id="xmldsig-849c6aa2-eb52-42db-829c-c8ebcbc4ee48-signedprops"><xades:SignedSignatureProperties><xades:SigningTime>2024-04-16T14:48:46+00:00</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>deJ7YgZPYRa5VYXH4SRpG1F6wRH41npAPa+3RbyfIwI=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>C=CO, L=Bogota D.C., O=Andes SCD, OU=Division de certificacion entidad final, CN=CA ANDES SCD S.A. Clase II v3, 1.2.840.113549.1.9.1=info@andesscd.com.co</ds:X509IssuerName><ds:X509SerialNumber>1726753347217552646</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate><xades:SignaturePolicyIdentifier><xades:SignaturePolicyId><xades:SigPolicyId><xades:Identifier>https://facturaelectronica.dian.gov.co/politicadefirma/v2/politicadefirmav2.pdf</xades:Identifier><xades:Description>Política de firma para facturas electrónicas de la República de Colombia</xades:Description></xades:SigPolicyId><xades:SigPolicyHash><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>dMoMvtcG5aIzgYo0tIsSQeVJBDnUnfSOfBpxXrmor0Y=</ds:DigestValue></xades:SigPolicyHash></xades:SignaturePolicyId></xades:SignaturePolicyIdentifier><xades:SignerRole><xades:ClaimedRoles><xades:ClaimedRole>third party</xades:ClaimedRole></xades:ClaimedRoles></xades:SignerRole></xades:SignedSignatureProperties><xades:SignedDataObjectProperties><xades:DataObjectFormat ObjectReference="#xmldsig-3c6b6b3e-a209-4a92-b5d9-4fd7cff2a3e2-ref0"><xades:MimeType>text/xml</xades:MimeType><xades:Encoding>UTF-8</xades:Encoding></xades:DataObjectFormat></xades:SignedDataObjectProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature></ext:ExtensionContent>
+    </ext:UBLExtension>
+  </ext:UBLExtensions>
+  <cbc:UBLVersionID>UBL 2.1</cbc:UBLVersionID>
+  <cbc:CustomizationID>10</cbc:CustomizationID>
+  <cbc:ProfileID>DIAN 2.1: Factura Electrónica de Venta</cbc:ProfileID>
+  <cbc:ProfileExecutionID>1</cbc:ProfileExecutionID>
+  <cbc:ID>FVFE22007</cbc:ID>
+  <cbc:UUID schemeID="1" schemeName="CUFE-SHA384">e15eb0e9872df00a0b7f7de8c8de97ae3136bb5005c0e1ac0e0269b7089321fc637bf7474a5881fbac32dcc944055080</cbc:UUID>
+  <cbc:IssueDate>2024-04-15</cbc:IssueDate>
+  <cbc:IssueTime>08:54:00-05:00</cbc:IssueTime>
+  <cbc:InvoiceTypeCode>01</cbc:InvoiceTypeCode>
+  <cbc:Note>- Bancolombia:
+                                        BIOPOLIMEROS INDUSTRIALES SAS 
+                                        Convenio 92289
+                                        Referencia: NIT cliente
+//
+                                        Banco de Bogotá
+                                        Cuenta de Corriente 
+                                        # 055281406
+                                        BIOPOLIMEROS INDUSTRIALES SAS 
+//
+                                        Banco Caja Social de ahorros
+                                        Cuenta Corriente
+                                        #21003812021
+                                        BIOPOLIMEROS INDUSTRIALES SAS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</cbc:Note>
+  <cbc:DocumentCurrencyCode>COP</cbc:DocumentCurrencyCode>
+  <cbc:LineCountNumeric>91</cbc:LineCountNumeric>
+  <cac:ReceiptDocumentReference>
+    <cbc:ID></cbc:ID>
+  </cac:ReceiptDocumentReference>
+  <cac:AccountingSupplierParty>
+    <cbc:AdditionalAccountID schemeAgencyID="195">1</cbc:AdditionalAccountID>
+    <cac:Party>
+      <cac:PartyName>
+        <cbc:Name>BIOPOLIMEROS INDUSTRIALES SAS</cbc:Name>
+      </cac:PartyName>
+      <cac:PhysicalLocation>
+        <cac:Address>
+          <cbc:ID>11001</cbc:ID>
+          <cbc:CityName>Bogotá, D.C</cbc:CityName>
+          <cbc:PostalZone></cbc:PostalZone>
+          <cbc:CountrySubentity>Bogotá D.C</cbc:CountrySubentity>
+          <cbc:CountrySubentityCode>11</cbc:CountrySubentityCode>
+          <cac:AddressLine>
+            <cbc:Line>Carrera 18 # 63a-50 </cbc:Line>
+          </cac:AddressLine>
+          <cac:Country>
+            <cbc:IdentificationCode>CO</cbc:IdentificationCode>
+            <cbc:Name languageID="es">Colombia</cbc:Name>
+          </cac:Country>
+        </cac:Address>
+      </cac:PhysicalLocation>
+      <cac:PartyTaxScheme>
+        <cbc:RegistrationName>BIOPOLIMEROS INDUSTRIALES SAS</cbc:RegistrationName>
+        <cbc:CompanyID schemeID="8" schemeName="31" schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">900246497</cbc:CompanyID>
+        <cbc:TaxLevelCode>O-23</cbc:TaxLevelCode>
+        <cac:RegistrationAddress>
+          <cbc:ID>11001</cbc:ID>
+          <cbc:CityName>Bogotá, D.C</cbc:CityName>
+          <cbc:PostalZone></cbc:PostalZone>
+          <cbc:CountrySubentity>Bogotá D.C</cbc:CountrySubentity>
+          <cbc:CountrySubentityCode>11</cbc:CountrySubentityCode>
+          <cac:AddressLine>
+            <cbc:Line>Carrera 18 # 63a-50 </cbc:Line>
+          </cac:AddressLine>
+          <cac:Country>
+            <cbc:IdentificationCode>CO</cbc:IdentificationCode>
+            <cbc:Name languageID="es">Colombia</cbc:Name>
+          </cac:Country>
+        </cac:RegistrationAddress>
+        <cac:TaxScheme>
+          <cbc:ID>01</cbc:ID>
+          <cbc:Name>IVA</cbc:Name>
+        </cac:TaxScheme>
+      </cac:PartyTaxScheme>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName>BIOPOLIMEROS INDUSTRIALES SAS</cbc:RegistrationName>
+        <cbc:CompanyID schemeID="8" schemeName="31" schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">900246497</cbc:CompanyID>
+        <cac:CorporateRegistrationScheme>
+          <cbc:ID>FVFE</cbc:ID>
+        </cac:CorporateRegistrationScheme>
+      </cac:PartyLegalEntity>
+      <cac:Contact>
+        <cbc:Name>Dina Vela</cbc:Name>
+        <cbc:Telephone>601|5405700|</cbc:Telephone>
+        <cbc:ElectronicMail>administrativo@biopolab.com</cbc:ElectronicMail>
+      </cac:Contact>
+    </cac:Party>
+  </cac:AccountingSupplierParty>
+  <cac:AccountingCustomerParty>
+    <cbc:AdditionalAccountID>1</cbc:AdditionalAccountID>
+    <cac:Party>
+      <cac:PartyName>
+        <cbc:Name>No aplica</cbc:Name>
+      </cac:PartyName>
+      <cac:PhysicalLocation>
+        <cac:Address>
+          <cbc:ID>66001</cbc:ID>
+          <cbc:CityName>Pereira</cbc:CityName>
+          <cbc:CountrySubentity>Risaralda</cbc:CountrySubentity>
+          <cbc:CountrySubentityCode>66</cbc:CountrySubentityCode>
+          <cac:AddressLine>
+            <cbc:Line>KILOMETRO 2 MAS 100 METROS VIA CERRITOS LA VIRGINIA.</cbc:Line>
+          </cac:AddressLine>
+          <cac:Country>
+            <cbc:IdentificationCode>CO</cbc:IdentificationCode>
+            <cbc:Name languageID="es">Colombia</cbc:Name>
+          </cac:Country>
+        </cac:Address>
+      </cac:PhysicalLocation>
+      <cac:PartyTaxScheme>
+        <cbc:RegistrationName>INDUSTRIAS TOMY S.A.S</cbc:RegistrationName>
+        <cbc:CompanyID schemeID="0" schemeName="31" schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">900131529</cbc:CompanyID>
+        <cbc:TaxLevelCode>R-99-PN</cbc:TaxLevelCode>
+        <cac:TaxScheme>
+          <cbc:ID>01</cbc:ID>
+          <cbc:Name>IVA</cbc:Name>
+        </cac:TaxScheme>
+      </cac:PartyTaxScheme>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName>INDUSTRIAS TOMY S.A.S</cbc:RegistrationName>
+        <cbc:CompanyID schemeID="0" schemeName="31" schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">900131529</cbc:CompanyID>
+      </cac:PartyLegalEntity>
+      <cac:Contact>
+        <cbc:Name>INDUSTRIAS TOMY S.A.S </cbc:Name>
+        <cbc:Telephone>6013401206000</cbc:Telephone>
+        <cbc:ElectronicMail>factura.electronica@saltitacos.com</cbc:ElectronicMail>
+      </cac:Contact>
+    </cac:Party>
+  </cac:AccountingCustomerParty>
+  <cac:PaymentMeans>
+    <cbc:ID>2</cbc:ID>
+    <cbc:PaymentMeansCode>ZZZ</cbc:PaymentMeansCode>
+    <cbc:PaymentDueDate>2024-05-15</cbc:PaymentDueDate>
+  </cac:PaymentMeans>
+  <cac:TaxTotal>
+    <cbc:TaxAmount currencyID="COP">707281.63</cbc:TaxAmount>
+    <cbc:RoundingAmount currencyID="COP">-0.455</cbc:RoundingAmount>
+    <cac:TaxSubtotal>
+      <cbc:TaxableAmount currencyID="COP">3722532.50</cbc:TaxableAmount>
+      <cbc:TaxAmount currencyID="COP">707281.63</cbc:TaxAmount>
+      <cac:TaxCategory>
+        <cbc:Percent>19.00</cbc:Percent>
+        <cac:TaxScheme>
+          <cbc:ID>01</cbc:ID>
+          <cbc:Name>IVA</cbc:Name>
+        </cac:TaxScheme>
+      </cac:TaxCategory>
+    </cac:TaxSubtotal>
+  </cac:TaxTotal>
+  <cac:WithholdingTaxTotal>
+    <cbc:TaxAmount currencyID="COP">409479.03</cbc:TaxAmount>
+    <cac:TaxSubtotal>
+      <cbc:TaxableAmount currencyID="COP">3722532.50</cbc:TaxableAmount>
+      <cbc:TaxAmount currencyID="COP">409479.03</cbc:TaxAmount>
+      <cac:TaxCategory>
+        <cbc:Percent>11.00</cbc:Percent>
+        <cac:TaxScheme>
+          <cbc:ID>06</cbc:ID>
+          <cbc:Name>ReteRenta</cbc:Name>
+        </cac:TaxScheme>
+      </cac:TaxCategory>
+    </cac:TaxSubtotal>
+  </cac:WithholdingTaxTotal>
+  <cac:LegalMonetaryTotal>
+    <cbc:LineExtensionAmount currencyID="COP">3722532.50</cbc:LineExtensionAmount>
+    <cbc:TaxExclusiveAmount currencyID="COP">3722532.50</cbc:TaxExclusiveAmount>
+    <cbc:TaxInclusiveAmount currencyID="COP">4429814.13</cbc:TaxInclusiveAmount>
+    <cbc:AllowanceTotalAmount currencyID="COP">0.00</cbc:AllowanceTotalAmount>
+    <cbc:ChargeTotalAmount currencyID="COP">0.00</cbc:ChargeTotalAmount>
+    <cbc:PayableAmount currencyID="COP">4429814.13</cbc:PayableAmount>
+  </cac:LegalMonetaryTotal>
+  <cac:InvoiceLine>
+    <cbc:ID>1</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10528 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>2</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10529 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>3</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10530 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>4</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10531 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>5</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10532 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>6</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10533 - Servicio de Análisis - Galleta redondita dulce Tingo Tango vainilla</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>7</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10534 - Servicio de Análisis - Galleta redondita dulce Tingo Tango vainilla</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>8</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10535 - Servicio de Análisis - Galleta redondita dulce Tingo Tango vainilla</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>9</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10536 - Servicio de Análisis - Galleta redondita dulce Tingo Tango vainilla</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>10</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10537 - Servicio de Análisis - Galleta redondita dulce Tingo Tango vainilla</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>11</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10538 - Servicio de Análisis - Happy cream vainilla</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>12</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10539 - Servicio de Análisis - Happy cream vainilla</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>13</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10540 - Servicio de Análisis - Happy cream vainilla</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>14</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10541 - Servicio de Análisis - Happy cream vainilla</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>15</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10542 - Servicio de Análisis - Happy cream vainilla</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>16</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10543 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>17</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10544 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>18</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10545 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>19</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10546 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>20</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10547 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>21</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10548 - Servicio de Análisis - Happy cream vainilla</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>22</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10549 - Servicio de Análisis - Happy cream vainilla</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>23</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10550 - Servicio de Análisis - Happy cream vainilla</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>24</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10551 - Servicio de Análisis - Happy cream vainilla</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>25</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10552 - Servicio de Análisis - Happy cream vainilla</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>26</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10553 - Servicio de Análisis - Galleta dulce chocolate Mi Petit Choc</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>27</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10554 - Servicio de Análisis - Galleta dulce chocolate Mi Petit Choc</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>28</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10555 - Servicio de Análisis - Galleta dulce chocolate Mi Petit Choc</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>29</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10556 - Servicio de Análisis - Galleta dulce chocolate Mi Petit Choc</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>30</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10557 - Servicio de Análisis - Galleta dulce chocolate Mi Petit Choc</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>31</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10558 - Servicio de Análisis - Galleta negra sin crema</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>32</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10559 - Servicio de Análisis - Galleta negra sin crema</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>33</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10560 - Servicio de Análisis - Galleta negra sin crema</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>34</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10561 - Servicio de Análisis - Galleta negra sin crema</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>35</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10562 - Servicio de Análisis - Galleta negra sin crema</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>36</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10563 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>37</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10564 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>38</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10565 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>39</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10566 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>40</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10567 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>41</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10579 - Servicio de Análisis - Galleta redondita fresa</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>42</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10580 - Servicio de Análisis - Galleta redondita fresa</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>43</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10581 - Servicio de Análisis - Galleta redondita fresa</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>44</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10582 - Servicio de Análisis - Galleta redondita fresa</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>45</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10583 - Servicio de Análisis - Galleta redondita fresa</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>46</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10584 - Servicio de Análisis - Galleta redondita fresa</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>47</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10585 - Servicio de Análisis - Galleta redondita fresa</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>48</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10586 - Servicio de Análisis - Galleta redondita fresa</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>49</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10587 - Servicio de Análisis - Galleta redondita fresa</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>50</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10588 - Servicio de Análisis - Galleta redondita fresa</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>51</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10589 - Servicio de Análisis - Galleta redondita limón</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>52</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10590 - Servicio de Análisis - Galleta redondita limón</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>53</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10591 - Servicio de Análisis - Galleta redondita limón</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>54</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10592 - Servicio de Análisis - Galleta redondita limón</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>55</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10593 - Servicio de Análisis - Galleta redondita limón</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>56</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10594 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>57</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10595 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>58</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10596 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>59</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10597 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>60</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10598 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>61</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10599 - Servicio de Análisis - Galleta redondita limón</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>62</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10600 - Servicio de Análisis - Galleta redondita limón</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>63</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10601 - Servicio de Análisis - Galleta redondita limón</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>64</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10602 - Servicio de Análisis - Galleta redondita limón</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>65</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10603 - Servicio de Análisis - Galleta redondita limón</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>66</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10604 - Servicio de Análisis - Happy cream vainilla</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>67</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10605 - Servicio de Análisis - Happy cream vainilla</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>68</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10606 - Servicio de Análisis - Happy cream vainilla</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>69</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10607 - Servicio de Análisis - Happy cream vainilla</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>70</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10608 - Servicio de Análisis - Happy cream vainilla</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>71</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10609 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>72</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10610 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>73</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10611 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>74</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10612 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>75</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10613 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>76</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10614 - Servicio de Análisis - Happy cream vainilla</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>77</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10615 - Servicio de Análisis - Happy cream vainilla</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>78</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10616 - Servicio de Análisis - Happy cream vainilla</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>79</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10617 - Servicio de Análisis - Happy cream vainilla</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>80</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10618 - Servicio de Análisis - Happy cream vainilla</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>81</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10619 - Servicio de Análisis - Galleta redondita dulce Tingo Tango</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>82</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10620 - Servicio de Análisis - Galleta redondita dulce Tingo Tango</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>83</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10621 - Servicio de Análisis - Galleta redondita dulce Tingo Tango</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>84</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10622 - Servicio de Análisis - Galleta redondita dulce Tingo Tango</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>85</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10623 - Servicio de Análisis - Galleta redondita dulce Tingo Tango</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>86</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10639 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>87</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10640 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>88</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10641 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>89</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10642 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>90</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">38530.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">6799.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">45330</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">38530.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">7320.8</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>24-10643 - Servicio de Análisis - Galleta salada</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">45330.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>91</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">254787.5</cbc:LineExtensionAmount>
+    <cac:AllowanceCharge>
+      <cbc:ID>0</cbc:ID>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="COP">44962.5</cbc:Amount>
+      <cbc:BaseAmount currencyID="COP">299750</cbc:BaseAmount>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">48409.63</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">-0.005</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">254787.50</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">48409.63</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>Servicio Muestreo</cbc:Description>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999">1-4</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">299750.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="ZZ">1</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+</Invoice>]]></cbc:Description>
+    </cac:ExternalReference>
+  </cac:Attachment>
+  <cac:ParentDocumentLineReference>
+    <cbc:LineID>1</cbc:LineID>
+    <cac:DocumentReference>
+      <cbc:ID>FVFE22007</cbc:ID>
+      <cbc:UUID schemeName="CUFE-SHA384">e15eb0e9872df00a0b7f7de8c8de97ae3136bb5005c0e1ac0e0269b7089321fc637bf7474a5881fbac32dcc944055080</cbc:UUID>
+      <cbc:IssueDate>2024-04-16</cbc:IssueDate>
+      <cbc:DocumentType>ApplicationResponse</cbc:DocumentType>
+      <cac:Attachment>
+        <cac:ExternalReference>
+          <cbc:MimeCode>text/xml</cbc:MimeCode>
+          <cbc:EncodingCode>UTF-8</cbc:EncodingCode>
+          <cbc:Description><![CDATA[<?xml version="1.0" encoding="utf-8" standalone="no"?><ApplicationResponse xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:sts="dian:gov:co:facturaelectronica:Structures-2-1" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2">
+  <ext:UBLExtensions>
+    <ext:UBLExtension>
+      <ext:ExtensionContent>
+        <sts:DianExtensions>
+          <sts:InvoiceSource>
+            <cbc:IdentificationCode listAgencyID="6" listAgencyName="United Nations Economic Commission for Europe" listSchemeURI="urn:oasis:names:specification:ubl:codelist:gc:CountryIdentificationCode-2.1">CO</cbc:IdentificationCode>
+          </sts:InvoiceSource>
+          <sts:SoftwareProvider>
+            <sts:ProviderID schemeID="4" schemeName="31" schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">800197268</sts:ProviderID>
+            <sts:SoftwareID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">...</sts:SoftwareID>
+          </sts:SoftwareProvider>
+          <sts:SoftwareSecurityCode schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">...</sts:SoftwareSecurityCode>
+          <sts:AuthorizationProvider>
+            <sts:AuthorizationProviderID schemeID="4" schemeName="31" schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">800197268</sts:AuthorizationProviderID>
+          </sts:AuthorizationProvider>
+        </sts:DianExtensions>
+      </ext:ExtensionContent>
+    </ext:UBLExtension>
+    <ext:UBLExtension>
+      <ext:ExtensionContent><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="Signature-e9a74f10-d2f9-47cc-a1fe-69b55b7fc31e"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" /><ds:Reference Id="Reference-762f1124-8983-4040-b3fa-e61758fa890a" URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>Vt+ev4XUfwCsS6iqKxsNUOtAtnjKNewJTY1chISfMME=</ds:DigestValue></ds:Reference><ds:Reference Id="ReferenceKeyInfo" URI="#Signature-e9a74f10-d2f9-47cc-a1fe-69b55b7fc31e-KeyInfo"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>GCb8IEbXKhiQeEZ/LeAT/J644qDavebYjdLuo3/s0J8=</ds:DigestValue></ds:Reference><ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xmldsig-Signature-e9a74f10-d2f9-47cc-a1fe-69b55b7fc31e-signedprops"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>1l7dMYiKBTfDnDGKZXQGz8lAtMFPamG6XWQB4k1m+d4=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue Id="SignatureValue-e9a74f10-d2f9-47cc-a1fe-69b55b7fc31e">kJ/aXpoPc0YheKbhVwc5mFQHObA7Lym/MuyBbthQH4WbLJ6VKV8D5WoBa4QJwO7SMAXnfBOwNbKRFHjk7F7IiGK+qRhmNA8E4zbO1UlgAXB5KY4dHzIYS1R3KpVbolA0cohi2nS45z/+GDoxPwpxAPBPcNybL4mBxeaHLZgxVl6zS/nrkYPfMN9o4Q89rC0y7pUgvmmVNDVJs+8N8h9DfOoDem1o6vN5m6EPgsfDGKbFhcXhZDk/CRCWAW6TEHv6fwVrTbaF8eJp9bFJwi6kBnG+0nGvfl/X6KeM4pXvSSpS3Esn9rbkodg+RsOx4UHs59LcbHTCCmp9t6nqcc42fw==</ds:SignatureValue><ds:KeyInfo Id="Signature-e9a74f10-d2f9-47cc-a1fe-69b55b7fc31e-KeyInfo"><ds:X509Data><ds:X509Certificate>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</ds:X509Certificate></ds:X509Data><ds:KeyValue><ds:RSAKeyValue><ds:Modulus>tWs5fz5itJqoQso9/1bjGCG5QmXB+fap4mQmdIE5NDUV+swjUcz7Na0gcTIAOxejr9XPybN1dbyZlI871J2sB67VUSJ9Mt+kF0n6w25sr1gGqEp36RCHCprqmpJPwWitLLrflpp+xNnu2BPOpO365RjjaPqnX7uu3uOEFxzJZqyLu7bGuB9Ob/pQww1KlHbQ8ThHMzRQ/aHIR1DU0NRo9D3Z7u/IyTvbpBrRXy6UWqrlHyS/uDzct2RZvUH6hwt1TlZWRJp6oa0IwcewJ1cRRvuzBwXO/FtQTvkv10x1sjhi906JMqUZivilIpo72H/7i4uhjF0Jwo8iwLSTYH1/Bw==</ds:Modulus><ds:Exponent>AQAB</ds:Exponent></ds:RSAKeyValue></ds:KeyValue></ds:KeyInfo><ds:Object Id="XadesObjectId-b0f4fa1d-59b6-4a15-83d4-41c6a779736d"><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" Id="QualifyingProperties-eaf60f17-3441-4e43-8b10-1b26383a0633" Target="#Signature-e9a74f10-d2f9-47cc-a1fe-69b55b7fc31e"><xades:SignedProperties Id="xmldsig-Signature-e9a74f10-d2f9-47cc-a1fe-69b55b7fc31e-signedprops"><xades:SignedSignatureProperties><xades:SigningTime>2024-04-16T14:48:47+00:00</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>BJbBGalZ6U+wEJrRUD69hteZS82kztgHYNSMJsw4P5I=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>C=CO, L=Bogota D.C., O=GSE, OU=PKI, CN=Autoridad Subordinada 01 GSE, E=info@gse.com.co</ds:X509IssuerName><ds:X509SerialNumber>198088280759436681347400</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate><xades:SignaturePolicyIdentifier><xades:SignaturePolicyId><xades:SigPolicyId><xades:Identifier>https://facturaelectronica.dian.gov.co/politicadefirma/v2/politicadefirmav2.pdf</xades:Identifier><xades:Description /></xades:SigPolicyId><xades:SigPolicyHash><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>dMoMvtcG5aIzgYo0tIsSQeVJBDnUnfSOfBpxXrmor0Y=</ds:DigestValue></xades:SigPolicyHash></xades:SignaturePolicyId></xades:SignaturePolicyIdentifier><xades:SignerRole><xades:ClaimedRoles><xades:ClaimedRole>supplier</xades:ClaimedRole></xades:ClaimedRoles></xades:SignerRole></xades:SignedSignatureProperties><xades:SignedDataObjectProperties><xades:DataObjectFormat ObjectReference="#Reference-762f1124-8983-4040-b3fa-e61758fa890a"><xades:MimeType>text/xml</xades:MimeType><xades:Encoding>UTF-8</xades:Encoding></xades:DataObjectFormat></xades:SignedDataObjectProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature></ext:ExtensionContent>
+    </ext:UBLExtension>
+  </ext:UBLExtensions>
+  <cbc:UBLVersionID>UBL 2.1</cbc:UBLVersionID>
+  <cbc:CustomizationID>1</cbc:CustomizationID>
+  <cbc:ProfileID>DIAN 2.1</cbc:ProfileID>
+  <cbc:ProfileExecutionID>1</cbc:ProfileExecutionID>
+  <cbc:ID>30623727</cbc:ID>
+  <cbc:UUID schemeName="CUDE-SHA384">6d96f3fc5b27368c8c8d84b8e073c32b0345da1835529fabc0b568299f8507874665e40dc02be56abe7cd9c31ffe6f87</cbc:UUID>
+  <cbc:IssueDate>2024-04-16</cbc:IssueDate>
+  <cbc:IssueTime>14:48:47-05:00</cbc:IssueTime>
+  <cac:SenderParty>
+    <cac:PartyTaxScheme>
+      <cbc:RegistrationName>Unidad Especial Dirección de Impuestos y Aduanas Nacionales</cbc:RegistrationName>
+      <cbc:CompanyID schemeID="4" schemeName="31">800197268</cbc:CompanyID>
+      <cac:TaxScheme>
+        <cbc:ID>01</cbc:ID>
+        <cbc:Name>IVA</cbc:Name>
+      </cac:TaxScheme>
+    </cac:PartyTaxScheme>
+  </cac:SenderParty>
+  <cac:ReceiverParty>
+    <cac:PartyTaxScheme>
+      <cbc:RegistrationName>BIOPOLIMEROS INDUSTRIALES SAS</cbc:RegistrationName>
+      <cbc:CompanyID schemeID="8" schemeName="31">900246497</cbc:CompanyID>
+      <cac:TaxScheme>
+        <cbc:ID>01</cbc:ID>
+        <cbc:Name>IVA</cbc:Name>
+      </cac:TaxScheme>
+    </cac:PartyTaxScheme>
+  </cac:ReceiverParty>
+  <cac:DocumentResponse>
+    <cac:Response>
+      <cbc:ResponseCode>02</cbc:ResponseCode>
+      <cbc:Description>Documento validado por la DIAN</cbc:Description>
+    </cac:Response>
+    <cac:DocumentReference>
+      <cbc:ID>FVFE22007</cbc:ID>
+      <cbc:UUID schemeName="CUFE-SHA384">e15eb0e9872df00a0b7f7de8c8de97ae3136bb5005c0e1ac0e0269b7089321fc637bf7474a5881fbac32dcc944055080</cbc:UUID>
+    </cac:DocumentReference>
+    <cac:LineResponse>
+      <cac:LineReference>
+        <cbc:LineID>1</cbc:LineID>
+      </cac:LineReference>
+      <cac:Response>
+        <cbc:ResponseCode>0000</cbc:ResponseCode>
+        <cbc:Description>0</cbc:Description>
+      </cac:Response>
+    </cac:LineResponse>
+    <cac:LineResponse>
+      <cac:LineReference>
+        <cbc:LineID>2</cbc:LineID>
+      </cac:LineReference>
+      <cac:Response>
+        <cbc:ResponseCode>RUT01</cbc:ResponseCode>
+        <cbc:Description>La validación del estado del RUT próximamente estará disponible.</cbc:Description>
+      </cac:Response>
+    </cac:LineResponse>
+    <cac:LineResponse>
+      <cac:LineReference>
+        <cbc:LineID>3</cbc:LineID>
+      </cac:LineReference>
+      <cac:Response>
+        <cbc:ResponseCode>RUT01</cbc:ResponseCode>
+        <cbc:Description>La validación del estado del RUT próximamente estará disponible.</cbc:Description>
+      </cac:Response>
+    </cac:LineResponse>
+  </cac:DocumentResponse>
+</ApplicationResponse>]]></cbc:Description>
+        </cac:ExternalReference>
+      </cac:Attachment>
+      <cac:ResultOfVerification>
+        <cbc:ValidatorID>Unidad Especial Dirección de Impuestos y Aduanas Nacionales</cbc:ValidatorID>
+        <cbc:ValidationResultCode>002</cbc:ValidationResultCode>
+        <cbc:ValidationDate>2024-04-16</cbc:ValidationDate>
+        <cbc:ValidationTime>14:48:45</cbc:ValidationTime>
+      </cac:ResultOfVerification>
+    </cac:DocumentReference>
+  </cac:ParentDocumentLineReference>
+</AttachedDocument>
