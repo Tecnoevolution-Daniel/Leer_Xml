@@ -53,14 +53,33 @@ def leer_xml(ruta_archivo):
         contenido = archivo.read()
     return contenido
 
-# Función para extraer el contenido de la etiqueta <sts:QRCode> en cualquier parte del XML
+# Función para extraer el contenido de la etiqueta <sts:QRCode>
 def extraer_contenido_qrcode(xml):
     print("Procesando XML para extraer QRCode...")
     soup = BeautifulSoup(xml, 'xml')  # Utilizamos el parser 'xml'
-    qrcode_tag = soup.find_all(string=re.compile(r'https?://'))  # Buscar todas las posibles URLs en el XML
-    for tag in qrcode_tag:
-        if "QRCode" in tag.parent.name:
-            return tag
+    
+    # Buscar en <cbc:Description> con contenido CDATA
+    description_tag = soup.find('cbc:Description')
+    if description_tag and description_tag.string:
+        # Analizar el contenido de CDATA como XML
+        contenido_cdata = BeautifulSoup(description_tag.string, 'xml')
+        qrcode_tag = contenido_cdata.find('sts:QRCode')
+        if qrcode_tag:
+            # Buscar la URL dentro del contenido del QRCode
+            qrcode_text = qrcode_tag.text
+            url_match = re.search(r'https?://[^\s]+', qrcode_text)
+            if url_match:
+                return url_match.group(0)
+    
+    # Buscar directamente en el XML para cualquier etiqueta <sts:QRCode>
+    qrcode_tags = soup.find_all('sts:QRCode')
+    for qrcode_tag in qrcode_tags:
+        if qrcode_tag:
+            qrcode_text = qrcode_tag.text
+            url_match = re.search(r'https?://[^\s]+', qrcode_text)
+            if url_match:
+                return url_match.group(0)
+    
     print("No se encontró la etiqueta <sts:QRCode> en el XML.")
     return None
 
