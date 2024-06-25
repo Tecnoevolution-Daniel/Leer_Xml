@@ -22,16 +22,30 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 import threading
 import xmltodict
+import fitz
 
 # Configuración del servidor SMTP y credenciales
 smtp_server = 'smtp.office365.com'
 smtp_port = 587
 username = 'pruebatomy@outlook.com'
-password = 'Colombia2023++'
+password = 'OMGtecnoevolution2024#'
 
 # Configuración del servidor IMAP
 imap_server = 'outlook.office365.com'
 imap_port = 993
+
+def mostrar(arreglo):
+    
+
+    json_string = json.dumps(arreglo)
+
+    carpeta = 'Archivos/json/'
+
+    with open(carpeta+'archivo.json', 'w', encoding='utf-8') as archivo:
+        json.dump(json_string, archivo, indent=4)
+    
+    print("Se ha creado archivojson con exito!")
+
 
 def crear_carpeta(ruta):
     try:
@@ -146,7 +160,9 @@ def handle_new_emails():
                                                 mover_archivo(full_file_path, xml_destino)
                                                 
                                                 # Procesar el XML
-                                                procesar_xml(xml_destino)
+                                                
+                                                resultado = procesar_xml(xml_destino)
+                                                mostrar(resultado)
                                     else:
                                         print("El archivo ZIP no contiene ambos archivos PDF y XML. Intentando extraer URL de QRCode...")
                                         # Si no tiene ambos archivos, intentar procesar con Selenium
@@ -252,21 +268,173 @@ def procesar_xml(xml_destino):
             'NIT': nit,
             'Factura': Factura,
             'IVA': iva,
-            'IVA_Precio': iva_p,
+            'Valor_IVA': iva_p,
             'Total': total
         }
 
-        print("\nInformación extraída del XML:")
-        print(f"Empresa: {Empresa}")
-        print(f"NIT: {nit}")
-        print(f"Factura: {Factura}")
-        print(f"IVA: {iva}")
-        print(f"Valor de IVA: {iva_p}")
-        print(f"Total: {total}")
-        print("\n")
+        #print("\nInformación extraída del XML:")
+        #print(f"Empresa: {Empresa}")
+        #print(f"NIT: {nit}")
+        #print(f"Factura: {Factura}")
+        #print(f"IVA: {iva}")
+        #print(f"Valor de IVA: {iva_p}")
+        #print(f"Total: {total}")
+        #print("\n")
+
+        return lista
         
     except Exception as e:
         print(f"Error al procesar el XML: {e}")
+
+
+def ultimo_archivo():
+
+    carpeta = 'C:/Users/User/Downloads'
+
+    archivos = os.listdir(carpeta)
+
+    archivos_pdf = [
+        (f, os.path.getctime(os.path.join(carpeta, f)))
+        for f in archivos
+        if os.path.isfile(os.path.join(carpeta, f)) and f.lower().endswith('.pdf')
+    ]
+
+    # Ordena los archivos por fecha de creación
+    archivos_pdf.sort(key=lambda x: x[1])
+
+    # Muestra los archivos .pdf ordenados por fecha de creación
+    #for archivo, ctime in archivos_pdf:
+    #    print(archivo, ctime)
+
+    #print(archivos_pdf[-1][0])
+
+    ruta_archivo = carpeta + "/" + archivos_pdf[-1][0]
+
+    return (ruta_archivo)
+
+
+def procesar_pdf(ruta):
+    
+    factura = ruta
+    #factura = 'Facturas/PDF/dian2.pdf'
+    #factura = 'direccion_de_la_factura'
+
+    with fitz.open(factura) as doc:
+
+        text = ""
+        for page in doc:
+            text += page.get_text()
+            
+
+    text = text.replace('�','')
+    lines = text.split("\n")
+
+
+    #print(lines)
+
+
+    #Factura
+    index_rv = [1 if re.match(r'^Número de Factura',line) else 0 for line in lines]
+    #print(index_rv)
+
+    index_rv = [i for i, s in enumerate(index_rv) if s==1 in index_rv]
+    #print(index_rv)
+
+
+    #print(lines[index_rv[0]])
+    Factura = lines[index_rv[0]]
+
+    #-------------------------------------------------------------------------------------------
+
+    #Proveedor
+    index_rv = [1 if re.match(r'^Nombre Comercial',line) else 0 for line in lines]
+    index_rv = [i for i, s in enumerate(index_rv) if s==1 in index_rv]
+
+    #print(lines[index_rv[0]])
+    Empresa = lines[index_rv[0]]
+
+    #-------------------------------------------------------------------------------------------
+
+    #Documento
+
+    index_rv = [1 if re.match(r'^Nit del Emisor',line) else 0 for line in lines]
+
+    index_rv = [i for i, s in enumerate(index_rv) if s==1 in index_rv]
+
+    #print(lines[index_rv[0]])
+    nit = lines[index_rv[0]]
+    #-------------------------------------------------------------------------------------------
+
+    #Porcentaje IVA
+
+    index_rv = [1 if re.match(r'\d+\.\d+,\d+ \d+\.00',line) else 0 for line in lines]
+
+    index_rv = [i for i, s in enumerate(index_rv) if s==1 in index_rv]
+
+    '''
+    print(index_rv)
+
+    for i in index_rv:
+        print(lines[i])
+    '''
+
+    porcentaje = lines[index_rv[0]].split(" ")
+
+    #print("Porcentaje de IVA: ",porcentaje[1],"%")
+    iva = porcentaje[1]
+
+    #-------------------------------------------------------------------------------------------
+
+    #TOTAL IVA
+
+    index_rv = [1 if re.match(r'^Total impuesto',line) else 0 for line in lines]
+
+    index_rv = [i for i, s in enumerate(index_rv) if s==1 in index_rv]
+
+    '''
+    print(index_rv)
+
+    for i in index_rv:
+        print(lines[i])
+    '''
+
+    iva_p = lines[index_rv[0]+1]
+
+    #print("Total IVA: ",iva_p)
+
+    #-------------------------------------------------------------------------------------------
+
+    #Total factura
+
+    index_rv = [1 if re.match(r'^Total factura',line) else 0 for line in lines]
+
+    index_rv = [i for i, s in enumerate(index_rv) if s==1 in index_rv]
+
+    total = lines[index_rv[0]+1]
+
+    #print("Total Factura: ",total)
+
+
+    lista = {
+            'Empresa': Empresa,
+            'NIT': nit,
+            'Factura': Factura,
+            'IVA': iva,
+            'Valor_IVA': iva_p,
+            'Total': total
+        }
+
+        #print("\nInformación extraída del XML:")
+        #print(f"Empresa: {Empresa}")
+        #print(f"NIT: {nit}")
+        #print(f"Factura: {Factura}")
+        #print(f"IVA: {iva}")
+        #print(f"Valor de IVA: {iva_p}")
+        #print(f"Total: {total}")
+        #print("\n")
+
+    return lista
+
 
 def abrir_pagina_qrcode(qrcode_url):
     try:
@@ -292,6 +460,12 @@ def abrir_pagina_qrcode(qrcode_url):
 
         # Cerrar el navegador
         driver.quit()
+
+        ruta = ultimo_archivo()
+        resultado = procesar_pdf(ruta)
+        mostrar(resultado)
+
+
 
     except Exception as e:
         print(f"Error al abrir la página del QRCode: {e}")
